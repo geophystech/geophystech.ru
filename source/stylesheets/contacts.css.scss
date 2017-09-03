@@ -1,0 +1,41 @@
+@import 'variables';
+
+iframe {
+	border: 0;
+  height: 700px;
+  width: 100%;
+}
+
+.container-fluid {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.row {
+	display: flex;
+
+  @media #{$mobile-size} {
+    flex-direction: column;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+.employee-card {
+	flex: 1;
+  border: 1px solid rgba(0, 0, 0, .10);
+  margin: 1%;
+
+  a.phone {
+		display: inline-block;
+    margin-top: 1%;
+	}
+
+  .work-area {
+  	margin-top: 1%;
+  	padding-bottom: 2%;
+  	padding-top: 2%;
+  }
+}

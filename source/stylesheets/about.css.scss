@@ -1,0 +1,33 @@
+@import 'variables';
+
+h2 {
+  margin-bottom: 3%;
+  margin-top: 3%;
+
+  @media #{$mobile-size} {
+    font-size: 180%;
+  	margin-bottom: 5%;
+  	margin-top: 5%;
+  }
+}
+
+p {
+  font-size: 115%;
+	margin-bottom: 2%;
+
+  @media #{$mobile-size} {
+		margin-bottom: 5%;
+		text-align: justify;
+	}
+}
+
+li {
+  font-size: 115%;
+}
+
+.row {
+  @media #{$mobile-size} {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}

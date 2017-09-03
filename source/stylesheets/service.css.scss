@@ -1,0 +1,55 @@
+@import 'variables';
+
+h2 {
+  margin-bottom: 3%;
+  margin-top: 3%;
+
+  @media #{$mobile-size} {
+    font-size: 180%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+}
+
+h3 {
+  margin-bottom: 3%;
+}
+
+p {
+  font-size: 115%;
+  margin-bottom: 2%;
+
+  @media #{$mobile-size} {
+    margin-bottom: 5%;
+    text-align: justify;
+  }
+}
+
+ol {
+  padding-left: 1.5%;
+}
+
+li {
+  font-size: 115%;
+}
+
+.row {
+  @media #{$mobile-size} {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+
+//  Services images
+.service-image {
+  box-shadow: $img-box-shadow;
+  margin: 1% auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+}

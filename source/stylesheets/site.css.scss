@@ -1,0 +1,23 @@
+@import 'bootstrap_components';
+@import 'variables';
+
+@import 'fonts';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+@import 'icons';
+
+@import 'general';
+
+@import 'header';
+@import 'breadcrumbs';
+@import 'content';
+@import 'footer';
+
+body {
+  color: $body-color;
+  font-family: $open-sans-light;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: $body-margin-top;
+  padding: 0;
+}

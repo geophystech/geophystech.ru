@@ -1,0 +1,89 @@
+---
+title: Главная
+extra_css:
+  - mainpage
+---
+
+.container-fluid.no-padding.mainpage
+  #content
+    .promo
+      %h1 Геофизические технологии
+      = link_to 'ВСЕ УСЛУГИ', '/services', class: 'btn btn-lg', role: 'button'
+
+    .info
+      %img{ alt: 'GEOPHYSTECH LLC logo', src: '/images/logos/geophystech.png', class: 'info-logo' }
+      %h2
+        %span Уникальные разработки.
+        %span Команда профессионалов.
+        %span Индивидуальный подход.
+      = link_to 'О КОМПАНИИ', '/about', class: 'btn btn-lg', role: 'button'
+
+    .services
+      %h1 Полный комплекс геофизических работ
+
+      .row
+        .col-lg-4.col-xs-12.service-image-left
+          %img{ src: '/images/services/engineering-geophysics/engineering-4.jpg', class: 'img-responsive' }
+
+        .col-lg-4.col-xs-12.service-text-right
+          %h3 Инженерная геофизика
+
+          %p Компания выполняет геофизические исследования в рамках инженерно-геологических изысканий. Результаты геофизических работ тесно связаны с задачами проектирования, строительства и эксплуатации зданий, сооружений и магистральных объектов.
+
+          %p Геофизические исследования являются неотъемлемой частью работ по сейсмическому микрорайонированию территории (площадки строительства).
+
+          = link_to_read_more('Подробнее об инженерной геофизике', '/services#engineering-geophysics')
+
+      .row
+        .col-lg-4.col-xs-12.service-image-right
+          %img{ src: '/images/services/seismic-monitoring/monitoring-2.png', class: 'img-responsive' }
+
+        .col-lg-4.col-xs-12.service-text-left
+          %h3 Сейсмический мониторинг
+
+          %p Сейсмический мониторинг - это комплекс работ, направленный на регистрацию, обработку и анализ сейсмических сигналов естественного и техногенного характеров в пределах наблюдаемой территории.
+
+          %p Важное практическое значение услуги - обеспечение сейсмической безопасности для устойчивой работы промышленных объектов, эксплуатации зданий и сооружений и снижение экологических рисков.
+
+          = link_to_read_more('Подробнее о сейсмическом мониторинге', '/services#seismic-monitoring')
+
+      .row
+        .col-lg-4.col-xs-12.service-image-left
+          %img{ src: '/images/services/consulting/consulting-1.png', class: 'img-responsive' }
+
+        .col-lg-4.col-xs-12.service-text-right
+          %h3 Консультационные услуги
+
+          %p Природные и техногенные катастрофы (землетрясения, оползни, разжижение грунта, цунами, размывы берегов) могут повлиять на безопасность работы объектов промышленного комплекса и оказать воздействие на окружающую среду.
+
+          %p Компания предлагает выработку индивидуального плана мониторинговых работ и изысканий для оценки потенциального ущерба и опасных факторов в результате возникновения природных и техногенных катастроф, с учетом российских нормативно-правовых актов и лучших достижений из международной практики.
+
+          = link_to_read_more('Подробнее об консультационных услугах', '/services#consulting')
+
+    .partners.col-lg-12.col-xs-12
+      %h3 Наши партнёры
+
+      %span
+        = link_to 'http://65.mchs.gov.ru/', data: { toogle: 'tooltip' }, title: 'МЧС России' do
+          %img{ alt: 'МЧС России', src: '/images/logos/mchs.png', class: 'img-responsive' }
+
+        = link_to 'http://www.sakhalinenergy.ru/ru/index.wbp', data: { toogle: 'tooltip' }, title: 'Сахалинская энергия' do
+          %img{ alt: 'Сахалинская энергия', src: '/images/logos/sakhalin_energy.png', class: 'img-responsive' }
+
+        = link_to 'http://www.sakhalin-1.ru/', data: { toogle: 'tooltip' }, title: 'Эксон Нефтегаз Лимитед' do
+          %img{ alt: 'Эксон Нефтегаз Лимитед', src: '/images/logos/exxon.png', class: 'img-responsive' }
+
+        = link_to 'http://www.dv.gkovd.ru', data: { toogle: 'tooltip' }, title: 'Аэронавигация Дальнего Востока' do
+          %img{ alt: 'Аэронавигация Дальнего Востока', src: '/images/logos/gkovd.png', class: 'img-responsive' }
+
+        = link_to 'http://www.sgpsakh.ru', data: { toogle: 'tooltip' }, title: 'САХАЛИНГРАЖДАНПРОЕКТ' do
+          %img{ alt: 'САХАЛИНГРАЖДАНПРОЕКТ', src: '/images/logos/sgp.png', class: 'img-responsive' }
+
+        = link_to 'http://sakhtisiz.com', data: { toogle: 'tooltip' }, title: 'Сахалин Тисиз' do
+          %img{ alt: 'Сахалин Тисиз', src: '/images/logos/tizis.png', class: 'img-responsive' }
+
+        = link_to 'http://www.giprogazcentr.ru', data: { toogle: 'tooltip' }, title: 'ГИПРОГАЗЦЕНТР' do
+          %img{ alt: 'ГИПРОГАЗЦЕНТР', src: '/images/logos/giprogazcentr.png', class: 'img-responsive' }
+
+        = link_to 'http://pecoltd.ru', data: { toogle: 'tooltip' }, title: 'Тихоокеанская инжиниринговая компания' do
+          %img{ alt: 'Тихоокеанская инжиниринговая компания', src: '/images/logos/peco.png', class: 'img-responsive' }

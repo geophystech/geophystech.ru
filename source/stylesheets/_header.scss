@@ -1,0 +1,163 @@
+.navbar {
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, .14);
+  height: $navbar-height;
+
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    height: $navbar-height;
+  }
+
+  .header-logo {
+    order: 1;
+
+    img {
+      height: 3em;
+    }
+  }
+
+  .header-menu {
+    a {
+      color: $inactive-link;
+      font-family: $open-sans-semibold;
+
+      &:hover {
+        color: $active-link;
+      }
+
+      &.active-link {
+        color: $active-link;
+      }
+    }
+  }
+}
+
+// Navbar with shadow
+.navbar-with-shadow {
+  box-shadow: 0 1px 10px 0 rgba(67, 82, 85, .25);
+  transition: all .5s ease;
+}
+
+// Header phone
+.header-phone {
+  order: 3;
+
+  .fa-phone {
+    font-size: 1.6em;
+    margin-right: 2%;
+  }
+
+  a {
+    color: $inactive-link;
+    font-family: $open-sans-semibold;
+    font-size: 120%;
+  }
+
+  .phone-prepend {
+    color: #8d9495;
+  }
+
+  @media #{$mobile-size} {
+    display: flex;
+  }
+}
+
+.header-social-media {
+  order: 4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+// Desktop
+@media #{$desktop-size} {
+  .navbar {
+    .header-menu {
+      order: 2;
+      display: flex;
+      justify-content: center;
+      padding-left: 8%;
+
+      a {
+        display: inline;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &:not(:last-child) {
+          border-right: #ebeff0 solid 2px;
+        }
+      }
+    }
+  }
+}
+
+// Mobile.
+@media all and (max-width: 600px) {
+  .navbar-collapse {
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    position: absolute;
+    left: -7em;
+    top: 100%;
+    transition: all .3s ease;
+    background-color: #fff;
+    width: 10em;
+    border: 1px solid rgba(0, 0, 0, .10);
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+
+  .navbar {
+    .header-phone {
+      order: 1;
+
+      a span {
+        display: none;
+      }
+
+      .fa-phone {
+        font-size: 2em;
+        margin-right: 0;
+        margin-top: 50%;
+      }
+    }
+
+    .header-logo {
+      order: 2;
+      display: flex;
+      justify-content: center;
+    }
+
+
+    .header-social-media {
+      display: none;
+    }
+
+    .header-menu {
+      order: 3;
+      display: flex;
+      justify-content: center;
+
+      a {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 4%;
+        font-size: 90%;
+        margin-bottom: 7%;
+
+        &:first-child {
+          margin-top: 7%;
+        }
+      }
+
+      .fa-bars {
+        font-size: 2em;
+        margin-top: 50%;
+      }
+    }
+  }
+}
+

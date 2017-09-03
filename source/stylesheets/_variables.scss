@@ -1,0 +1,44 @@
+// screens
+$desktop-size: 'only screen and (min-width: 1382px)';
+$laptop-size: 'only screen and (min-width: 768px)';
+$mobile-size: 'only screen and (min-width: 320px) and (max-width: 1199px)';
+
+// fonts
+$open-sans-light: 'Open Sans Light', Helvetica, Arial;
+$open-sans-regular: 'Open Sans Regular', Helvetica, Arial;
+$open-sans-semibold: 'Open Sans SemiBold', Helvetica, Arial;
+
+// colors
+$bg-color-gray: #fafbfc;
+$border-color-gray: #ebeff0;
+$body-color: #435255;
+$img-box-shadow-color: rgba(67, 82, 85, .25);
+$image-text-color: #ffffff;
+$slogan: #9dabae;
+
+// body
+$body-margin-top: 70px;
+
+// header
+$navbar-height: 70px;
+
+// icons
+$gray-icon: #818181;
+
+// images
+$img-box-shadow: 0 2px 8px 0 $img-box-shadow-color, 0 6px 20px 0 $img-box-shadow-color;
+
+// links
+$active-link: #3eacb9;
+$inactive-link: $body-color;
+$link: $active-link;
+
+// buttons
+$btn-bg-orange: #eb6b46;
+$btn-bg-orange-hover: #d9623f;
+$btn-bg-blue: $active-link;
+$btn-bg-blue-hover: #2d909c;
+
+// promo
+$color-white: #fefefe;
+

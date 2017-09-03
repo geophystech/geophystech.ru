@@ -1,0 +1,269 @@
+@import 'variables';
+
+.mainpage {
+  .btn {
+    color: $color-white;
+    font-size: 16px;
+    width: 200px;
+  }
+
+  h3 {
+    align-items: center;
+    display: flex;
+    font-family: $open-sans-regular;
+    justify-content: left;
+    margin-bottom: 5%;
+  }
+}
+
+.promo {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -20px;
+  text-align: center;
+
+  h1 {
+    color: $color-white;
+    font-family: $open-sans-light;
+  }
+
+  .btn {
+    background-color: $btn-bg-orange;
+
+    &:hover {
+      background-color: $btn-bg-orange-hover;
+    }
+  }
+
+  @media screen and (min-device-width: 1200px) {
+    background-image: url('/images/backgrounds/mainpage-lg.jpg');
+    min-height: calc(100vh - #{$body-margin-top} - #{$navbar-height} - 120px);
+
+    h1 {
+      margin-bottom: 5%;
+      padding-top: 10%;
+    }
+  }
+
+  @media #{$mobile-size} {
+    background-image: url('/images/backgrounds/mainpage-sm.jpg');
+    min-height: calc(100vh - #{$body-margin-top} - #{$navbar-height} - 120px);
+
+    h1 {
+      font-size: 180%;
+      // margin-bottom: 20%;
+      padding-top: 20%;
+    }
+
+    a {
+      margin-bottom: 10%;
+      margin-top: 15%;
+    }
+  }
+}
+
+.info {
+  align-items: center;
+  border-bottom: solid 1px $border-color-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5%;
+
+  h2 {
+    margin-bottom: 3%;
+  }
+
+  .info-logo {
+    margin-bottom: 3%;
+    margin-top: 5%;
+  }
+
+  .btn {
+    background-color: $btn-bg-blue;
+
+    &:hover {
+      background-color: $btn-bg-blue-hover;
+    }
+  }
+
+  @media #{$mobile-size} {
+    padding-bottom: 10%;
+
+    .info-logo {
+      margin-bottom: 10%;
+      margin-top: 15%;
+    }
+
+    h2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 100%;
+      margin-bottom: 10%;
+
+      span {
+        margin-bottom: 3%;
+        margin-right: 1%;
+      }
+    }
+  }
+}
+
+.services {
+  h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  p,
+  a {
+    font-size: 130%;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+
+  img {
+    box-shadow: $img-box-shadow;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 8%;
+    display: flex;
+    justify-content: center;
+
+    .service-image-left, .service-text-left {
+      order: 1;
+    }
+
+    .service-image-right, .service-text-right {
+      order: 2;
+    }
+
+    .service-text-left {
+      justify-content: flex-start;
+    }
+  }
+
+  @media #{$desktop-size} {
+    .service-image-right, .service-text-right {
+      margin-left: 3%;
+    }
+  }
+
+  @media #{$mobile-size} {
+    h1 {
+      font-size: 120%;
+    }
+
+    h3 {
+      font-size: 150%;
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      font-size: 100%;
+      text-align: justify;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+
+    .row {
+      flex-direction: column;
+
+      a {
+        display: flex;
+        font-size: 100%;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          height: 10px;
+        }
+      }
+
+
+      div {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .service-image-left, .service-text-left {
+        order: 1;
+      }
+
+      .service-image-right, .service-text-right {
+        order: 1;
+      }
+    }
+  }
+}
+
+
+.partners {
+  background-color: $bg-color-gray;
+  border-bottom: $border-color-gray 2px solid;
+  border-top: $border-color-gray 2px solid;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    justify-content: center;
+  }
+
+  span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  img {
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+
+  @media #{$desktop-size} {
+    padding-top: 2%;
+
+    a {
+      flex-basis: calc(100% / 5);
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      max-height: 150px;
+      margin-bottom: 15%;
+    }
+  }
+
+  @media #{$mobile-size} {
+    h3 {
+      font-size: 120%;
+      margin-bottom: 10%;
+    }
+
+    a {
+      flex-basis: calc(100% / 3);
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      max-height: 50px;
+      margin-bottom: 15%;
+    }
+  }
+}
