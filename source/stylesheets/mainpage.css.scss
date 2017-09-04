@@ -153,6 +153,10 @@
     }
   }
 
+  .slides {
+    margin-bottom: 3%;
+  }
+
   @media #{$desktop-size} {
     .service-image-right, .service-text-right {
       margin-left: 3%;
