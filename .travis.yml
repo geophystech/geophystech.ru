@@ -9,6 +9,8 @@ script:
 
 deploy:
   provider: script
-  script: bundle exec middleman deploy
+  script:
+    - bundle exec rake build
+    - bundle exec rake deploy
   on:
     branch: master
