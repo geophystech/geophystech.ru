@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+  - 2.3.4
+cache: bundler
+
+script:
+  - bundle exec haml-lint source/
+  - bundle exec scss-lint source/
+
+deploy:
+  provider: script
+  script: bundle exec middleman deploy
+  on:
+    branch: master
