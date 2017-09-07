@@ -1,7 +1,8 @@
-/* Links */
-a, a:hover {
-  cursor: pointer;
+// Links
+a,
+a:hover {
   color: $active-link;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -10,9 +11,9 @@ a, a:hover {
 }
 
 .phone {
-  color: #435255;
+  color: $body-color;
 
   &:hover {
-    color: #435255;
+    color: $body-color;
   }
 }
