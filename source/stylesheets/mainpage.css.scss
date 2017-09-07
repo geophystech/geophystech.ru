@@ -99,8 +99,8 @@
     h2 {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       font-size: 100%;
+      justify-content: center;
       margin-bottom: 10%;
 
       span {
@@ -134,17 +134,19 @@
   }
 
   .row {
+    display: flex;
+    justify-content: center;
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 8%;
-    display: flex;
-    justify-content: center;
 
-    .service-image-left, .service-text-left {
+    .service-image-left,
+    .service-text-left {
       order: 1;
     }
 
-    .service-image-right, .service-text-right {
+    .service-image-right,
+    .service-text-right {
       order: 2;
     }
 
@@ -158,7 +160,8 @@
   }
 
   @media #{$desktop-size} {
-    .service-image-right, .service-text-right {
+    .service-image-right,
+    .service-text-right {
       margin-left: 3%;
     }
   }
@@ -169,25 +172,25 @@
     }
 
     h3 {
-      font-size: 150%;
       display: flex;
+      font-size: 150%;
       justify-content: center;
     }
 
     p {
       font-size: 100%;
-      text-align: justify;
       padding-left: 3%;
       padding-right: 3%;
+      text-align: justify;
     }
 
     .row {
       flex-direction: column;
 
       a {
+        align-items: center;
         display: flex;
         font-size: 100%;
-        align-items: center;
         justify-content: center;
 
         svg {
@@ -201,11 +204,13 @@
         padding-right: 0;
       }
 
-      .service-image-left, .service-text-left {
+      .service-image-left,
+      .service-text-left {
         order: 1;
       }
 
-      .service-image-right, .service-text-right {
+      .service-image-right,
+      .service-text-right {
         order: 1;
       }
     }
@@ -242,14 +247,14 @@
     padding-top: 2%;
 
     a {
-      flex-basis: calc(100% / 5);
       display: flex;
+      flex-basis: calc(100% / 5);
       justify-content: center;
     }
 
     img {
-      max-height: 150px;
       margin-bottom: 15%;
+      max-height: 150px;
     }
   }
 
@@ -260,14 +265,14 @@
     }
 
     a {
-      flex-basis: calc(100% / 3);
       display: flex;
+      flex-basis: calc(100% / 3);
       justify-content: center;
     }
 
     img {
-      max-height: 50px;
       margin-bottom: 15%;
+      max-height: 50px;
     }
   }
 }
