@@ -6,19 +6,19 @@ h2 {
 
   @media #{$mobile-size} {
     font-size: 180%;
-  	margin-bottom: 5%;
-  	margin-top: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
   }
 }
 
 p {
   font-size: 115%;
-	margin-bottom: 2%;
+  margin-bottom: 2%;
 
   @media #{$mobile-size} {
-		margin-bottom: 5%;
-		text-align: justify;
-	}
+    margin-bottom: 5%;
+    text-align: justify;
+  }
 }
 
 li {
@@ -27,7 +27,7 @@ li {
 
 .row {
   @media #{$mobile-size} {
-		padding-left: 2%;
-		padding-right: 2%;
-	}
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
