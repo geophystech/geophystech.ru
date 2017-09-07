@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 desc 'Check website'
 task :check do
   puts '--> bundle exec rubocop'

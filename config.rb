@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -40,12 +42,11 @@ helpers do
     current = current_page.url.split('/').reject(&:empty?).first
     target  = url.split('/').reject(&:empty?).first
 
-    link_to text, url, class: "#{'active-link' if current == target}"
+    link_to text, url, class: ('active-link' if current == target)
   end
 
-
   def link_to_read_more(text, url)
-    path = content_tag(:path, nil, d: 'M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z', fill: { rule: 'evenodd' } )
+    path = content_tag(:path, nil, d: 'M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z', fill: { rule: 'evenodd' })
     svg = content_tag(:svg, path, aria: { hidden: 'true' }, height: '14', version: '1.1', viewbox: '0 0 6 13', width: '12', class: 'svg-arrow')
 
     link_to text + svg, url
