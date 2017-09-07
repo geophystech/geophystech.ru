@@ -1,18 +1,19 @@
-/* Links */
-a, a:hover {
-	cursor: pointer;
-	color: $active-link;
-	text-decoration: none;
+// Links
+a,
+a:hover {
+  color: $active-link;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .svg-arrow {
-	margin-left: 1%;
+  margin-left: 1%;
 }
 
 .phone {
-	color: #435255;
+  color: $body-color;
 
-	&:hover {
-		color: #435255;
-	}
+  &:hover {
+    color: $body-color;
+  }
 }

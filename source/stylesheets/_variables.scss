@@ -3,21 +3,37 @@ $desktop-size: 'only screen and (min-width: 1382px)';
 $laptop-size: 'only screen and (min-width: 768px)';
 $mobile-size: 'only screen and (min-width: 320px) and (max-width: 1199px)';
 
+// body
+$body-margin-top: 70px;
+
+// colors
+$active-link: #3eacb9;
+$bg-color-gray: #fafbfc;
+$bg-color-gray2: #8d9495;
+$bg-color-white: #fff;
+$border-color-gray: #ebeff0;
+$border-color-rgba-10: rgba(0, 0, 0, .10);
+$border-color-rgba-14: rgba(0, 0, 0, .14);
+$body-color: #435255;
+$img-box-shadow-color: rgba(67, 82, 85, .25);
+$image-text-color: #fff;
+$slogan: #9dabae;
+
+// borders
+$border-employee-card: 1px solid $border-color-rgba-10;
+$border-header-navbar-collapse: 1px solid $border-color-rgba-10;
+$border-header-menu-right: $border-color-gray solid 2px;
+
+// buttons
+$btn-bg-orange: #eb6b46;
+$btn-bg-orange-hover: #d9623f;
+$btn-bg-blue: $active-link;
+$btn-bg-blue-hover: #2d909c;
+
 // fonts
 $open-sans-light: 'Open Sans Light', Helvetica, Arial;
 $open-sans-regular: 'Open Sans Regular', Helvetica, Arial;
 $open-sans-semibold: 'Open Sans SemiBold', Helvetica, Arial;
-
-// colors
-$bg-color-gray: #fafbfc;
-$border-color-gray: #ebeff0;
-$body-color: #435255;
-$img-box-shadow-color: rgba(67, 82, 85, .25);
-$image-text-color: #ffffff;
-$slogan: #9dabae;
-
-// body
-$body-margin-top: 70px;
 
 // header
 $navbar-height: 70px;
@@ -29,16 +45,13 @@ $gray-icon: #818181;
 $img-box-shadow: 0 2px 8px 0 $img-box-shadow-color, 0 6px 20px 0 $img-box-shadow-color;
 
 // links
-$active-link: #3eacb9;
 $inactive-link: $body-color;
 $link: $active-link;
 
-// buttons
-$btn-bg-orange: #eb6b46;
-$btn-bg-orange-hover: #d9623f;
-$btn-bg-blue: $active-link;
-$btn-bg-blue-hover: #2d909c;
-
 // promo
 $color-white: #fefefe;
+
+// shadows
+$shadow-navbar-collapse: 0 2px 4px $border-color-rgba-10;
+$shadow-navbar-with-shadow: 0 1px 10px 0 $img-box-shadow-color;
 
