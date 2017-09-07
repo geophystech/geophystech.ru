@@ -1,11 +1,11 @@
 .navbar {
-  background-color: #fff;
-  border-color: rgba(0, 0, 0, .14);
+  background-color: $bg-color-white;
+  border-color: $border-color-rgba-14;
   height: $navbar-height;
 
   .container-fluid {
-    display: flex;
     align-items: center;
+    display: flex;
     height: $navbar-height;
   }
 
@@ -35,7 +35,7 @@
 
 // Navbar with shadow
 .navbar-with-shadow {
-  box-shadow: 0 1px 10px 0 rgba(67, 82, 85, .25);
+  box-shadow: $shadow-navbar-with-shadow;
   transition: all .5s ease;
 }
 
@@ -55,7 +55,7 @@
   }
 
   .phone-prepend {
-    color: #8d9495;
+    color: $bg-color-gray2;
   }
 
   @media #{$mobile-size} {
@@ -64,9 +64,9 @@
 }
 
 .header-social-media {
-  order: 4;
   display: flex;
   justify-content: flex-end;
+  order: 4;
 }
 
 
@@ -74,9 +74,9 @@
 @media #{$desktop-size} {
   .navbar {
     .header-menu {
-      order: 2;
       display: flex;
       justify-content: center;
+      order: 2;
       padding-left: 8%;
 
       a {
@@ -85,7 +85,7 @@
         padding-right: 15px;
 
         &:not(:last-child) {
-          border-right: #ebeff0 solid 2px;
+          border-right: $border-header-menu-right;
         }
       }
     }
@@ -95,18 +95,18 @@
 // Mobile.
 @media all and (max-width: 600px) {
   .navbar-collapse {
+    background-color: $bg-color-white;
+    border: $border-header-navbar-collapse;
+    border-radius: 3px;
+    box-shadow: $shadow-navbar-collapse;
+    left: -7em;
     margin: 0;
     padding: 0;
-    z-index: 10;
     position: absolute;
-    left: -7em;
     top: 100%;
     transition: all .3s ease;
-    background-color: #fff;
     width: 10em;
-    border: 1px solid rgba(0, 0, 0, .10);
-    border-radius: 3px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 10;
   }
 
 
@@ -126,9 +126,9 @@
     }
 
     .header-logo {
-      order: 2;
       display: flex;
       justify-content: center;
+      order: 2;
     }
 
 
@@ -137,16 +137,16 @@
     }
 
     .header-menu {
-      order: 3;
       display: flex;
       justify-content: center;
+      order: 3;
 
       a {
         display: flex;
-        justify-content: flex-end;
-        padding-right: 4%;
         font-size: 90%;
+        justify-content: flex-end;
         margin-bottom: 7%;
+        padding-right: 4%;
 
         &:first-child {
           margin-top: 7%;
