@@ -1,20 +1,20 @@
 .container
-  #footer.row
-    #left-part.col-lg-1.col-xs-6
+  .row#footer
+    .col-lg-1.col-xs-6#left-part
       = link_to '/', data: { toogle: 'tooltip' }, title: 'Геофизические технологии' do
         %img{ alt: 'GEOPHYSTECH LLC logo', src: '/images/logos/geophystech.png' }
 
 
-    #central-part.col-lg-10.col-xs-12
+    .col-lg-10.col-xs-12#central-part
       #long-title
         ООО "Геофизические технологии"
       #slogan
         Инновации. Качество. Безопасность.
 
-    #right-part.col-lg-1.col-xs-6
+    .col-lg-1.col-xs-6#right-part
       = link_to 'https://eqalert.ru', data: { toogle: 'tooltip' }, title: 'EQAlert' do
         %img{ alt: 'eqalert.ru logo', src: '/images/logos/eqalert_beta.png' }
 
     / Копирайт и год вставляются с помощью javascript'а.
-    #copyright.col-lg-12.hidden-xs
+    .col-lg-12.hidden-xs#copyright
 
