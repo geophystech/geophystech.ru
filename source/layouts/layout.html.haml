@@ -1,7 +1,8 @@
 !!! 5
 %html
   %head
-    %title= current_page.data.title ? "#{current_page.data.title} | Геофизические технологии" : 'Геофизические технологии'
+    %title
+      = current_page.data.title ? "#{current_page.data.title} | Геофизические технологии" : 'Геофизические технологии'
 
     = partial 'layouts/meta_tags'
     = partial 'layouts/favicon'

@@ -8,4 +8,5 @@ gem 'middleman-autoprefixer', '~> 2.7'
 gem 'middleman-livereload'
 gem 'middleman-minify-html'
 gem 'middleman-sprockets'
+gem 'rubocop', require: false
 gem 'scss_lint', require: false

@@ -6,10 +6,11 @@
 
 
     .col-lg-7.col-xs-2.header-menu
-      %button.navbar-toggle.collapsed{ aria: { expanded: 'false' }, data: { target: '#menu-items', toggle: 'collapse' }, type: 'button' }
+      %button.navbar-toggle.collapsed{ aria: { expanded: 'false' },
+        data: { target: '#menu-items', toggle: 'collapse' }, type: 'button' }
         %i.fa.fa-bars.fa-lg
 
-      #menu-items.collapse.navbar-collapse
+      .collapse.navbar-collapse#menu-items
         = navbar_link 'УСЛУГИ',     '/services'
         = navbar_link 'О КОМПАНИИ', '/about'
         = navbar_link 'КОНТАКТЫ',   '/contacts'
@@ -25,6 +26,7 @@
       = link_to 'https://twitter.com/geophystech_llc', data: { toogle: 'tooltip' }, title: 'Twitter' do
         %i.fa.fa-twitter.fa-lg
 
-      = link_to 'https://www.youtube.com/channel/UCazw8yZGrlFm2f8iZNcLTxA/videos', data: { toogle: 'tooltip' }, title: 'YouTube' do
+      = link_to 'https://www.youtube.com/channel/UCazw8yZGrlFm2f8iZNcLTxA/videos',
+        data: { toogle: 'tooltip' }, title: 'YouTube' do
         %i.fa.fa-youtube-play.fa-lg
 

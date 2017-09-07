@@ -4,7 +4,8 @@ rvm:
 cache: bundler
 
 script:
-  - bundle exec haml-lint source/
+  - bundle exec rubocop
+  - bundle exec haml-lint -c .haml_lint.yml source/
   - bundle exec scss-lint source/
 
 deploy:

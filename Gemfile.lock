@@ -161,6 +161,7 @@ DEPENDENCIES
   middleman-livereload
   middleman-minify-html
   middleman-sprockets
+  rubocop
   scss_lint
 
 BUNDLED WITH
