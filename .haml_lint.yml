@@ -2,8 +2,7 @@ skip_frontmatter: true
 
 linters:
   LineLength:
-    enabled: true
-    max: 120
+    enabled: false
 
   RuboCop:
     enabled: true
