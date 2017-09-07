@@ -11,16 +11,17 @@ $open-sans-semibold: 'Open Sans SemiBold', Helvetica, Arial;
 // colors
 $bg-color-gray: #fafbfc;
 $border-color-gray: #ebeff0;
+$border-color-rgba-10: rgba(0, 0, 0, .10);
 $body-color: #435255;
 $img-box-shadow-color: rgba(67, 82, 85, .25);
-$image-text-color: #ffffff;
+$image-text-color: #fff;
 $slogan: #9dabae;
 
 // body
 $body-margin-top: 70px;
 
 // borders
-$border-employee-card: 1px solid rgba(0, 0, 0, .10);
+$border-employee-card: 1px solid $border-color-rgba-10;
 
 // header
 $navbar-height: 70px;
