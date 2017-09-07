@@ -1,3 +1,21 @@
+desc 'Check website'
+task :check do
+  puts '--> bundle exec rubocop'
+  status = system('bundle exec rubocop')
+  puts status ? '--> OK' : 'FAILED'
+  puts
+
+  puts '--> bundle exec haml-lint -c .haml_lint.yml source/'
+  status = system('bundle exec haml-lint -c .haml_lint.yml source/')
+  puts status ? '--> OK' : 'FAILED'
+  puts
+
+  puts '--> bundle exec scss-lint source/'
+  status = system('bundle exec scss-lint source/')
+  puts status ? '--> OK' : 'FAILED'
+  puts
+end
+
 desc 'Build website'
 task :build do
   puts '--> Building website (bundle exec middleman build --clean --parallel)'
