@@ -24,11 +24,11 @@ iframe {
 }
 
 .employee-card {
+  border: $border-employee-card;
   flex: 1;
-  border: 1px solid rgba(0, 0, 0, .10);
   margin: 1%;
 
-  a.phone {
+  .phone {
     display: inline-block;
     margin-top: 1%;
   }
