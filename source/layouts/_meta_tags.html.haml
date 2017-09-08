@@ -1,8 +1,10 @@
 %meta{ charset: 'utf-8' }
-%meta{ content: 'text/html; charset=UTF-8', http: { equiv: 'Content-Type' } }
 %meta{ content: 'ie=edge', http: { equiv: 'x-ua-compatible' } }
 %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' }
 %meta{ name: 'yandex-verification', content: '9ceee6cadd47da98' }
-%meta{ name: 'keywords', content: current_page.data.keywords }
-%meta{ name: 'description', content: current_page.data.description }
 
+- if current_page.data.keywords
+  %meta{ name: 'keywords', content: current_page.data.keywords }
+
+- if current_page.data.description
+  %meta{ name: 'description', content: current_page.data.description }
