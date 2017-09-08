@@ -49,7 +49,18 @@ li {
   margin-top: 2%;
 }
 
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-.table > tbody > tr > td {
-  vertical-align: middle;
+  .table {
+    align-self: center;
+    width: auto;
+
+    td {
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
 }
