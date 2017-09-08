@@ -1,11 +1,10 @@
 %nav.navbar.navbar-fixed-top
   .container-fluid
-    .col-lg-2.col-xs-8.header-logo
+    .col-lg-2.col-md-10.col-sm-10.col-xs-8.header-logo
       = link_to '/', data: { toogle: 'tooltip' }, title: 'Геофизические технологии' do
         %img.img-responsive{ alt: 'GEOPHYSTECH LLC logo', src: '/images/logos/geophystech.png' }
 
-
-    .col-lg-7.col-xs-2.header-menu
+    .col-lg-7.col-md-1.col-sm-1.col-xs-2.header-menu
       %button.navbar-toggle.collapsed{ aria: { expanded: 'false' },
         data: { target: '#menu-items', toggle: 'collapse' }, type: 'button' }
         %i.fa.fa-bars.fa-lg
@@ -16,13 +15,13 @@
         = navbar_link 'КОНТАКТЫ',   '/contacts'
         = navbar_link 'РЕКВИЗИТЫ',  '/banking-information'
 
-    .col-lg-2.col-xs-2.header-phone
+    .col-lg-2.col-md-1.col-sm-1.col-xs-2.header-phone
       = link_to 'tel:+78005001169', class: 'phone' do
         %i.fa.fa-phone.fa-lg
         %span.phone-prepend 8 (800)
         %span 500-11-69
 
-    .col-lg-1.col-xs-1.header-social-media
+    .col-lg-1.col-md-1.col-sm-1.col-xs-1.header-social-media
       = link_to 'https://twitter.com/geophystech_llc', data: { toogle: 'tooltip' }, title: 'Twitter' do
         %i.fa.fa-twitter.fa-lg
 
