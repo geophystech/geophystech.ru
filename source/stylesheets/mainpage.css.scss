@@ -248,13 +248,21 @@
 
     a {
       display: flex;
-      flex-basis: calc(100% / 5);
+      flex-basis: calc(100% / 4);
       justify-content: center;
+
+      &:last-child {
+        flex-basis: 100%;
+
+        img {
+          margin-bottom: 3%;
+        }
+      }
     }
 
     img {
       margin-bottom: 15%;
-      max-height: 150px;
+      max-height: 120px;
     }
   }
 
@@ -268,6 +276,14 @@
       display: flex;
       flex-basis: calc(100% / 3);
       justify-content: center;
+
+      &:last-child {
+        flex-basis: 100%;
+
+        img {
+          margin-bottom: 3%;
+        }
+      }
     }
 
     img {
