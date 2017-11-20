@@ -37,6 +37,31 @@
     color: $slogan;
   }
 
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+
+    a {
+      color: $inactive-link;
+      font-family: $open-sans-semibold;
+      margin-left: 5%;
+      margin-right: 5%;
+
+      &:hover {
+        color: $active-link;
+      }
+
+      &.active-link {
+        color: $active-link;
+      }
+    }
+
+    @media (min-width: 1680px) {
+      display: none;
+    }
+  }
+
   @media #{$mobile-size} {
     .left-part {
       order: 2;
