@@ -61,12 +61,21 @@
   @media #{$mobile-size} {
     display: flex;
   }
+
+  @media (min-width: 1200px) and (max-width: 1679px) {
+    text-align: right;
+    width: 25%;
+  }
 }
 
 .header-social-media {
   display: flex;
   justify-content: flex-end;
   order: 4;
+
+  @media (min-width: 1200px) and (max-width: 1679px) {
+    display: none;
+  }
 }
 
 

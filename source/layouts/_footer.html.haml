@@ -1,5 +1,29 @@
 .container
   .row.footer
+    .col-lg-12.col-md-12.col-sm-12.col-xs-12.social-media
+      = link_to 'https://twitter.com/geophystech_llc', data: { toogle: 'tooltip' }, title: 'Twitter' do
+        %i.fa.fa-twitter.fa-lg
+
+      = link_to 'https://www.youtube.com/channel/UCazw8yZGrlFm2f8iZNcLTxA/videos',
+        data: { toogle: 'tooltip' }, title: 'YouTube' do
+        %i.fa.fa-youtube-play.fa-lg
+
+      = link_to 'https://github.com/geophystech/',
+        data: { toogle: 'tooltip' }, title: 'GitHub' do
+        %i.fa.fa-github.fa-lg
+
+      = link_to 'https://www.instagram.com/geophystech',
+        data: { toogle: 'tooltip' }, title: 'Instagram' do
+        %i.fa.fa-instagram.fa-lg
+
+      = link_to 'https://www.facebook.com/geophystech',
+        data: { toogle: 'tooltip' }, title: 'Facebook' do
+        %i.fa.fa-facebook-square.fa-lg
+
+      = link_to 'https://vk.com/geophystech',
+        data: { toogle: 'tooltip' }, title: 'VK' do
+        %i.fa.fa-vk.fa-lg
+
     .col-lg-1.col-xs-6.left-part
       = link_to '/', data: { toogle: 'tooltip' }, title: 'Геофизические технологии' do
         %img{ alt: 'GEOPHYSTECH LLC logo', src: '/images/logos/geophystech.png' }
