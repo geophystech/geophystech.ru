@@ -9,49 +9,66 @@ extra_css:
   %h2 Контакты
 
   .row
-    .employee-card
-      %h4 Манайчев Константин Александрович
-      .position Директор
+    .col-lg-3.col-lg-offset-2
+      %img.img-responsive{ alt: 'Директор', src: '/images/people/manaychev.png' }
+    .col-lg-4
+      .employee-card
+        %h4 Манайчев Константин Александрович
+        .position Директор
 
-      = link_to '8 (800) 500-11-69 (добавочный 9003)', 'tel:+78005001169', class: 'phone'
-      .email= link_to 'k.manaychev@geophystech.ru', 'mailto: k.manaychev@geophystech.ru'
-      .work-area Сейсмическое районирование, геофизические работы
-
-  .row
-    .employee-card
-      %h4 Степнов Андрей Александрович
-      .position Заместитель директора по коммерческим вопросам
-      .academic-degree Кандидат физико-математических наук
-
-      = link_to '8 (800) 500-11-69 (добавочный 9002)', 'tel:+78005001169', class: 'phone'
-      .email= link_to 'a.stepnov@geophystech.ru', 'mailto: a.stepnov@geophystech.ru'
-      .work-area Сейсмический мониторинг, коммерциализация результатов интеллектуальной деятельности
-
-    .employee-card
-      %h4 Коновалов Алексей Валерьевич
-      .position Заместитель директора по научной работе
-      .academic-degree Кандидат физико-математических наук
-
-      = link_to '8 (800) 500-11-69 (добавочный 9001)', 'tel:+78005001169', class: 'phone'
-      .email= link_to 'a.konovalov@geophystech.ru', 'mailto: a.konovalov@geophystech.ru'
-      .work-area Консультационные услуги, прикладные научные исследования и разработки
+        = link_to '8 (800) 500-11-69 (добавочный 9003)', 'tel:+78005001169', class: 'phone'
+        .email= link_to 'k.manaychev@geophystech.ru', 'mailto: k.manaychev@geophystech.ru'
+        .work-area Сейсмическое районирование, геофизические работы
 
   .row
-    .employee-card
-      %h4 Гаврилов Александр Викторович
-      .position Главный инженер
+    .col-lg-3.col-lg-offset-2
+      %img.img-responsive{ alt: 'Заместитель директора по коммерческим вопросам', src: '/images/people/stepnov.jpg' }
+    .col-lg-4
+      .employee-card
+        %h4 Степнов Андрей Александрович
+        .position Заместитель директора по коммерческим вопросам
+        .academic-degree Кандидат физико-математических наук
 
-      = link_to '8 (800) 500-11-69 (добавочный 9004)', 'tel:+78005001169', class: 'phone'
-      .email= link_to 'a.gavrilov@geophystech.ru', 'mailto: a.gavrilov@geophystech.ru'
-      .work-area Разработка оборудования, развитие телеметрической сети
+        = link_to '8 (800) 500-11-69 (добавочный 9002)', 'tel:+78005001169', class: 'phone'
+        .email= link_to 'a.stepnov@geophystech.ru', 'mailto: a.stepnov@geophystech.ru'
+        .work-area Сейсмический мониторинг, коммерциализация результатов интеллектуальной деятельности
 
-    .employee-card
-      %h4 Борисова Евгения Александровна
-      .position Офис-менеджер
+  .row
+    .col-lg-3.col-lg-offset-2
+      %img.img-responsive{ alt: 'Заместитель директора по научной работе', src: '/images/people/konovalov.jpg' }
+    .col-lg-4
+      .employee-card
+        %h4 Коновалов Алексей Валерьевич
+        .position Заместитель директора по научной работе
+        .academic-degree Кандидат физико-математических наук
 
-      = link_to '8 (800) 500-11-69 (добавочный 9010)', 'tel:+78005001169', class: 'phone'
-      .email= link_to 'e.borisova@geophystech.ru', 'mailto: e.borisova@geophystech.ru'
-      .work-area Сопровождение контрактов, общие вопросы
+        = link_to '8 (800) 500-11-69 (добавочный 9001)', 'tel:+78005001169', class: 'phone'
+        .email= link_to 'a.konovalov@geophystech.ru', 'mailto: a.konovalov@geophystech.ru'
+        .work-area Консультационные услуги, прикладные научные исследования и разработки
+
+  .row
+    .col-lg-3.col-lg-offset-2
+      %img.img-responsive{ alt: 'Главный инженер', src: '/images/people/gavrilov.jpg' }
+    .col-lg-4
+      .employee-card
+        %h4 Гаврилов Александр Викторович
+        .position Главный инженер
+
+        = link_to '8 (800) 500-11-69 (добавочный 9004)', 'tel:+78005001169', class: 'phone'
+        .email= link_to 'a.gavrilov@geophystech.ru', 'mailto: a.gavrilov@geophystech.ru'
+        .work-area Разработка оборудования, развитие телеметрической сети
+
+  .row
+    .col-lg-3.col-lg-offset-2
+      %img.img-responsive{ alt: 'Офис-менеджер', src: '/images/people/borisova.jpg' }
+    .col-lg-4
+      .employee-card
+        %h4 Борисова Евгения Александровна
+        .position Офис-менеджер
+
+        = link_to '8 (800) 500-11-69 (добавочный 9010)', 'tel:+78005001169', class: 'phone'
+        .email= link_to 'e.borisova@geophystech.ru', 'mailto: e.borisova@geophystech.ru'
+        .work-area Сопровождение контрактов, общие вопросы
 
 .container-fluid.no-padding
   .row
