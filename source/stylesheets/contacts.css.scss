@@ -13,8 +13,25 @@ iframe {
   }
 }
 
+h2 {
+  margin-bottom: 5%;
+}
+
+h4 {
+  margin-bottom: 5%;
+}
+
 .row {
   display: flex;
+  margin-bottom: 3%;
+
+  img {
+    box-shadow: $img-box-shadow;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 90%;
+  }
 
   @media #{$mobile-size} {
     flex-direction: column;
@@ -24,12 +41,15 @@ iframe {
 }
 
 .employee-card {
-  border: $border-employee-card;
   flex: 1;
   margin: 1%;
 
   .phone {
     display: inline-block;
+    margin-top: 5%;
+  }
+
+  .academic-degree {
     margin-top: 1%;
   }
 
