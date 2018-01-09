@@ -37,7 +37,7 @@
   }
 
   @media screen and (min-device-width: 1200px) {
-    background-image: url('/images/backgrounds/mainpage-lg.jpg');
+    background-image: url('/images/backgrounds/mainpage-lg.png');
     min-height: calc(100vh - #{$body-margin-top} - #{$navbar-height} - 120px);
 
     h1 {
@@ -47,7 +47,7 @@
   }
 
   @media #{$mobile-size} {
-    background-image: url('/images/backgrounds/mainpage-sm.jpg');
+    background-image: url('/images/backgrounds/mainpage-sm.png');
     min-height: calc(100vh - #{$body-margin-top} - #{$navbar-height} - 120px);
 
     h1 {
