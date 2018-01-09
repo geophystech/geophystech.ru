@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+sitemap: https://geophystech.ru/sitemap.xml
