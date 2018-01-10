@@ -1,20 +1,21 @@
 !!! 5
 %html{ lang: 'ru' }
   %head
-    %title= current_page.data.title ? "#{current_page.data.title} | Геофизические технологии" : 'Геофизические технологии'
-
     = partial 'layouts/meta_tags'
     = partial 'layouts/favicon'
+
+    %title= current_page.data.title ? "#{current_page.data.title} | Геофизические технологии" : 'Геофизические технологии'
+
+    = inline_stylesheet 'site'
+
+    - current_page.data.extra_css&.each do |css_name|
+      = inline_stylesheet css_name
   %body
     = partial 'layouts/header'
     = yield
     = partial 'layouts/footer'
 
-    = stylesheet_link_tag 'site'
-    = javascript_include_tag 'site'
-
-    - current_page.data.extra_css&.each do |css_name|
-      = stylesheet_link_tag css_name
+    = javascript_include_tag 'site', async: true
 
     = partial 'layouts/google_analytics'
     = partial 'layouts/yandex_metrika'
