@@ -66,7 +66,7 @@ end
 # Disable warnings
 Haml::TempleEngine.disable_option_validator!
 
-
+# Let stylesheets and javascripts to be inlined.
 module AssetHelper
   ##
   # Renders a stylesheet asset inline.
