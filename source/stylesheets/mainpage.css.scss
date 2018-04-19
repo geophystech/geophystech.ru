@@ -250,14 +250,6 @@
       display: flex;
       flex-basis: calc(100% / 4);
       justify-content: center;
-
-      &:last-child {
-        flex-basis: 100%;
-
-        img {
-          margin-bottom: 3vw;
-        }
-      }
     }
 
     img {
