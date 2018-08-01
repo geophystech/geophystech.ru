@@ -135,7 +135,7 @@ GEM
       rake (>= 0.9, < 13)
       sass (~> 3.4.20)
     servolux (0.13.0)
-    sprockets (3.7.1)
+    sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sysexits (1.2.0)
