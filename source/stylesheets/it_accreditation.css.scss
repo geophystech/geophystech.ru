@@ -1,0 +1,71 @@
+@import 'variables';
+
+h2 {
+  margin-bottom: 3%;
+  margin-top: 3%;
+
+  @media #{$mobile-size} {
+    font-size: 180%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+}
+
+h3 {
+  font-family: $open-sans-semibold;
+  font-size: 125%;
+  font-weight: normal;
+  line-height: 1.42857143;
+  margin-bottom: .5%;
+  margin-top: 0;
+}
+
+p {
+  font-size: 115%;
+  margin-bottom: 2%;
+
+  @media #{$mobile-size} {
+    margin-bottom: 5%;
+    text-align: justify;
+  }
+}
+
+li {
+  font-size: 115%;
+  margin-bottom: 1%;
+}
+
+.organization-details {
+  dl {
+    margin-bottom: 0;
+  }
+
+  dt,
+  dd {
+    font-size: 115%;
+  }
+
+  dt {
+    font-family: $open-sans-semibold;
+    font-size: 125%;
+    font-weight: normal;
+    line-height: 1.42857143;
+    margin-bottom: .5%;
+  }
+
+  dd {
+    margin-bottom: 2%;
+    margin-left: 0;
+  }
+
+  .detail-label {
+    font-weight: normal;
+  }
+}
+
+.row {
+  @media #{$mobile-size} {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}

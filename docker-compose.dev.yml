@@ -1,0 +1,9 @@
+services:
+  site:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - "./caddy/Caddyfile.test:/etc/caddy/Caddyfile:ro"
+      - "./caddy/data:/data"
+      - "./caddy/config:/config"

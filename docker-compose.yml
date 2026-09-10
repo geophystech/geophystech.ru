@@ -1,0 +1,13 @@
+services:
+  site:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/opt/caddy/Caddyfile:/etc/caddy/Caddyfile:ro"
+      - "/opt/caddy/data:/data"
+      - "/opt/caddy/config:/config"
+      - "/opt/site-data/documents:/srv/documents"
+      - "/opt/site-data/.well-known:/srv/.well-known:ro"
+    restart: unless-stopped
